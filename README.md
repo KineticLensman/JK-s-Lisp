@@ -9,4 +9,4 @@ Variations (hopefully improvements!) on the Mal guide's version and the C# refer
 * Tokeniser can handle negative numbers, decimal-only numbers (e.g. `.2`) and detect bad numbers (e.g. `1.2.3`). To achieve this I replaced the regex-based tokeniser in the C#-Mal ref with a hand-rolled lexer.
 * Lots more error checking
 * Function bodies can have multiple exprs in their body
-
+* Distinction between structured sequences (i.e. hashmaps) and unstructured sequences (Lists and Vectors). This intentionally precludes some list operations from being applied to hashmaps, primarily to maintain key/ value pairs. 
